@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<! --
+Name: Jessica Boettner
+Date Created: 9/12/18
+Most Recent Revision: 12:22 9/12/18
+
+Still needs Bootstrap added to form for validation and style. 
+-->
+<html lang="en">
+
+<head>
+	<meta charset="utf-8">
+	<meta name="viewport" content="width=device-width, intial-scale=1, shrink-to-fit=no">
+
+	<title> Restaurant Contact Form </title>
+
+	<link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/css/bootstrap.min.css" integrity="sha384-MCw98/SFnGE8fJT3GXwEOngsV7Zt27NXFoaoApmYm81iuXoPkFOJwJ8ERdknLPMO" crossorigin="anonymous">
+	<link href="https://maxcdn.bootstrapcdn.com/bootstrap/3.3.7/css/bootstrap.min.css"
+        rel="stylesheet" type="text/css" />
+
+	<link href="restaurantStyles.css" rel="stylesheet" type="text/css">
+	<link href="https://fonts.googleapis.com/css?family=Cabin+Sketch|Kalam" rel="stylesheet">
+
+	<style>
+		textarea {height:5em; width:265px}
+		select {width:270px}
+		select, input, textarea {font-family: 'kalam', cursive; font-size: 20px;}
+		table {margin-left: 2em;}
+		input.required {font-weight: bolder;}
+	</style>
+</head>
+
+<body>
+	<header class="jumbotron">
+		<h1> Lynn's Classic Grill </h1>
+		<h3 class="text-right mt-5"> We are opening a new location! </h3>
+	</header>
+
+	<nav>
+	<a class="btn" href="index.html" alt="Home page link" > <span class="glyphicon glyphicon-home"> </span> </a> 
+	<a class="btn" href="menu.html" alt="Menu page link" > Menu</a>   
+	<a class="btn" href="contact.html" alt="Contact page link" > Contact Us </a> 
+	</nav>
+<main>	
+	<br />
+	<form name="contact"action="contactform.html" method= "POST">
+		<table>
+			<tr><td style ="text-align:right"> <label style="font-weight: bold;" > Name:&nbsp; </label> 
+				</td><td> <input type="text" name="myTextInput" required id="input1"/> </td> </tr>  
+			<tr><td style ="text-align:right"> <label style="font-weight: bold;"> Email:&nbsp; </label> 
+				</td><td> <input type="text" name="myTextInput" required id="input2"/> </td></tr> 
+			<tr><td style ="text-align:right"> <label> Phone:&nbsp; </label> 
+				</td><td> <input type="text" name="myTextInput" id="input3" /> </td></tr> 
+			<tr><td style ="text-align:right"> <label> Reason for Inquiry:&nbsp; </label> 
+				</td><td> <select name="reason" width="265px" id="input4"> 
+					<option value="Catering"> Catering </option>
+					<option value="Private Party"> Private Party </option> 
+					<option value="Feedback"> Feedback </option> 
+					<option value="Other"> Other <option> </select> </td></tr> 
+
+			<tr> <td style ="text-align:right" valign="top"> <label> Additional Information:&nbsp; </label> 
+				</td><td> <textarea name="Additonal Information" id="input5"> </textarea> </td></tr> 
+			<tr> <td style ="text-align:right"> <label> Have you been to Lynn's Classic Grill?&nbsp; </label> 
+				</td><td> <input type="radio" name="answer" value="NO" checked /> No 
+					<input type="radio" name="answer" value="YES" /> Yes </td></tr> 
+		
+			<tr> <td style ="text-align:right"> <label> Best days to contact you:&nbsp; </label>  </td><td>
+				<input type="checkbox" name="myChoices" value="M" /> M 
+				<input type="checkbox" name="myChoices" value="T" /> T 
+				<input type="checkbox" name="myChoices" value="W" /> W 
+				<input type="checkbox" name="myChoices" value="Th" /> Th 
+				<input type="checkbox" name="myChoices" value="F" /> F </td></tr>
+			<tr> <td></td> <td> <input type="submit" value="Send Request" /> </td> </tr>
+		<table>  
+	</form>
+	<br />
+</main>		
+
+	<footer>
+		<p> 7009 Amethyst Lane, Plano TX 75025 </p>
+		<p> (731) 293-1858 </p>
+	</footer>
+	<script src="https://code.jquery.com/jquery-3.3.1.slim.min.js" integrity="sha384-q8i/X+965DzO0rT7abK41JStQIAqVgRVzpbzo5smXKp4YfRvH+8abtTE1Pi6jizo" crossorigin="anonymous"></script>
+        <script src="https://cdnjs.cloudflare.com/ajax/libs/popper.js/1.14.3/umd/popper.min.js" integrity="sha384-ZMP7rVo3mIykV+2+9J3UJ46jBk0WLaUAdn689aCwoqbBJiSnjAK/l8WvCWPIPm49" crossorigin="anonymous"></script>
+        <script src="https://stackpath.bootstrapcdn.com/bootstrap/4.1.3/js/bootstrap.min.js" integrity="sha384-ChfqqxuZUCnJSK3+MXmPNIyE6ZbWh2IMqE241rYiqJxyMiZ6OW/JmZQ5stwEULTy" crossorigin="anonymous"></script>
+</body>
+
+</html>
